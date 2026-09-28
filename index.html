@@ -1,0 +1,163 @@
+<!-- =========================================================
+STEP 1: Add the required HTML5 skeleton
+========================================================= -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Discover Madison - Visitor Guide</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+
+  <body>
+    <!-- =========================================================
+    STEP 2: Build the “top area” (site name + navigation) using simple HTML
+    ========================================================= -->
+    <header>
+      <div class="logo">Discover Madison</div>
+      <nav>
+        <ul>
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#features">Highlights</a></li>
+          <li><a href="#featured">Featured</a></li>
+          <li><a href="#secondary">Explore</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <!-- =========================================================
+      STEP 3: Hero section + “Get Started button” as a link
+      ========================================================= -->
+      <section id="hero">
+        <h1>Discover Madison</h1>
+        <p>Explore the best local spots, lakes, and culture in Wisconsin's capital city.</p>
+        <a href="#features" class="btn">Get Started</a>
+        <br /><br />
+        <!-- Hero image: Standard banner width -->
+        <img 
+          src="images/landscape.jpg" 
+          alt="Panoramic scenic view of Lake Mendota at sunset" 
+          width="1200" 
+          height="600" 
+          style="max-width: 100%; height: auto;"
+        />
+      </section>
+
+      <!-- =========================================================
+      STEP 4: Features section (3 blocks) + featured content section
+      ========================================================= -->
+      <section id="features">
+        <h2>City Highlights</h2>
+
+        <article>
+          <!-- Feature Icons: Small, uniform 40x40 sizing -->
+          <img src="images/water.png" alt="Water icon" width="40" height="40" />
+          <h3>Lakeside Views</h3>
+          <p>Relax at the Memorial Union Terrace and enjoy vibrant sunsets right on the water.</p>
+        </article>
+
+        <article>
+          <img src="images/food.png" alt="Food icon" width="40" height="40" />
+          <h3>Local Dining</h3>
+          <p>Enjoy world-class farm-to-table dining options located near the Capitol square.</p>
+        </article>
+
+        <article>
+          <img src="images/hiking.png" alt="Hiking icon" width="40" height="40" />
+          <h3>Outdoor Trails</h3>
+          <p>Hike or bike along miles of scenic paths encircling Lake Mendota and Monona.</p>
+        </article>
+      </section>
+
+      <section id="featured">
+        <h2>Featured Destination</h2>
+        <p>
+          The Capitol Square hosts the country's largest producer-only farmers market 
+          every Saturday morning throughout the summer season.
+        </p>
+        <ul>
+          <li>Over 250 local Wisconsin vendors</li>
+          <li>Fresh produce, cheeses, and baked goods</li>
+          <li>Held weekly from April through November</li>
+        </ul>
+        <!-- Featured Image: Large focused display -->
+        <img 
+          src="images/farmersmarket.jpg" 
+          alt="Bustling outdoor farmers market surrounding the Madison Capitol building" 
+          width="800" 
+          height="450" 
+          style="max-width: 100%; height: auto;"
+        />
+      </section>
+
+      <!-- =========================================================
+      STEP 5: Two secondary content blocks + CTA section 
+      ========================================================= -->
+      <section id="secondary">
+        <h2>More to Explore</h2>
+
+        <article>
+          <h3>State Street Pedestrian Mall</h3>
+          <p>
+            A vibrant walk connecting the campus to the Capitol, packed with local 
+            eateries, coffee shops, and unique boutiques.
+          </p>
+          <a href="https://www.visitmadison.com" target="_blank" rel="noopener noreferrer">
+            Learn more about State Street
+          </a>
+          <br /><br />
+          <!-- Secondary Block Image: Medium card size -->
+          <img 
+            src="images/statestreet.jpg" 
+            alt="Pedestrian walkways along State Street lined with shops" 
+            width="500" 
+            height="330" 
+            style="max-width: 100%; height: auto;"
+          />
+        </article>
+
+        <article>
+          <h3>Henry Vilas Zoo</h3>
+          <p>
+            An admission-free, community-supported zoo featuring animals from 
+            around the world, perfect for visitors of all ages.
+          </p>
+          <a href="https://www.visitmadison.com" target="_blank" rel="noopener noreferrer">
+            Explore zoo exhibits
+          </a>
+          <br /><br />
+          <!-- Secondary Block Image: Medium card size -->
+          <img 
+            src="images/henryvillaszoo.jpg" 
+            alt="Lemur at the exhibit at the zoo" 
+            width="500" 
+            height="330" 
+            style="max-width: 100%; height: auto;"
+          />
+        </article>
+      </section>
+
+      <section id="cta">
+        <h2>Heard Enough?</h2>
+        <p>Plan your trip today and experience everything the city has to offer.</p>
+        <a href="#hero" class="btn">Plan Your Visit</a>
+      </section>
+    </main>
+
+    <!-- =========================================================
+    STEP 6: Footer 
+    ========================================================= -->
+    <footer>
+      <p>&copy; 2026 Discover Madison. All rights reserved.</p>
+      <nav aria-label="Footer Navigation">
+        <ul>
+          <li><a href="#hero">About Us</a></li>
+          <li><a href="#secondary">Attractions</a></li>
+          <li><a href="#cta">Contact</a></li>
+        </ul>
+      </nav>
+    </footer>
+  </body>
+</html>
