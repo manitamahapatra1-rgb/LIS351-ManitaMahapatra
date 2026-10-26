@@ -1,9 +1,4 @@
-/* a4stylesheet.css
-   A4: Intro CSS Fill-in Template
-   Instructions: rename this file to styles.css and complete each TODO block.
-*/
 
-/* ===== Base styles (mostly done) ===== */
 * { box-sizing: border-box; }
 
 body {
@@ -16,6 +11,11 @@ body {
 
 a { color: inherit; text-decoration: none; }
 a:hover { text-decoration: underline; }
+
+img {
+  max-width: 100%;
+  height: auto;
+}
 
 .container {
   width: min(1000px, 92%);
@@ -33,6 +33,7 @@ a:hover { text-decoration: underline; }
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding: 14px 0;
 }
 
 .brand {
@@ -131,6 +132,11 @@ a:hover { text-decoration: underline; }
   font-size: 22px;
 }
 
+.icon img {
+  width: 32px;
+  height: 32px;
+}
+
 /* ===== Featured content ===== */
 .featured {
   padding: 42px 0 36px;
@@ -153,12 +159,26 @@ a:hover { text-decoration: underline; }
   font-size: 13px;
 }
 
+.featured-list {
+  max-width: 680px;
+  margin: 0 auto 22px;
+  color: #666;
+  font-size: 13px;
+}
+
 .media {
   background: #eaeaea;
   border: 1px solid #ddd;
   height: 260px;
   display: grid;
   place-items: center;
+  overflow: hidden;
+}
+
+.media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 /* ===== Secondary content (2 cards) ===== */
@@ -200,6 +220,9 @@ a:hover { text-decoration: underline; }
 .card-image {
   min-height: 160px;
   /* TODO M (Image block) */
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
   background-size: cover;
   background-position: center;
 }
